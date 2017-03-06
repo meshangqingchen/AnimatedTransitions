@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LCCollectionViewCell.h"
 @interface BViewController : UIViewController
 @property(nonatomic,strong) UIImage *image;
 @property(nonatomic,strong) UIImageView *imageView;
+@property(nonatomic,strong) UILabel *label;
+@property(nonatomic,strong) NSString *lableStr;
+
+@property(nonatomic,strong) LCCollectionViewCell *cell;
 @end

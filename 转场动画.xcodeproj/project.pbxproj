@@ -14,6 +14,7 @@
 		740B05901E67EF8300A3CCD5 /* thing03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 740B058B1E67EF8300A3CCD5 /* thing03.jpg */; };
 		740B05911E67EF8300A3CCD5 /* thing04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 740B058C1E67EF8300A3CCD5 /* thing04.jpg */; };
 		740B05921E67EF8300A3CCD5 /* thing05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 740B058D1E67EF8300A3CCD5 /* thing05.jpg */; };
+		7469D78C1E6CFC1F00109839 /* LCApopA.m in Sources */ = {isa = PBXBuildFile; fileRef = 7469D78B1E6CFC1F00109839 /* LCApopA.m */; };
 		74E02D021E66D0C600A2FB4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E02D011E66D0C600A2FB4F /* main.m */; };
 		74E02D051E66D0C600A2FB4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E02D041E66D0C600A2FB4F /* AppDelegate.m */; };
 		74E02D081E66D0C600A2FB4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E02D071E66D0C600A2FB4F /* ViewController.m */; };
@@ -66,6 +67,8 @@
 		740B058B1E67EF8300A3CCD5 /* thing03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing03.jpg; sourceTree = "<group>"; };
 		740B058C1E67EF8300A3CCD5 /* thing04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing04.jpg; sourceTree = "<group>"; };
 		740B058D1E67EF8300A3CCD5 /* thing05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing05.jpg; sourceTree = "<group>"; };
+		7469D78A1E6CFC1F00109839 /* LCApopA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCApopA.h; sourceTree = "<group>"; };
+		7469D78B1E6CFC1F00109839 /* LCApopA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCApopA.m; sourceTree = "<group>"; };
 		74E02CFD1E66D0C600A2FB4F /* 转场动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "转场动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E02D011E66D0C600A2FB4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74E02D031E66D0C600A2FB4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				74E02D3A1E67D9EE00A2FB4F /* LCCollectionViewCell.m */,
 				740B057D1E67E97500A3CCD5 /* LCApushB.h */,
 				740B057E1E67E97500A3CCD5 /* LCApushB.m */,
+				7469D78A1E6CFC1F00109839 /* LCApopA.h */,
+				7469D78B1E6CFC1F00109839 /* LCApopA.m */,
 				740B05861E67ED3000A3CCD5 /* DSLThing.h */,
 				740B05871E67ED3000A3CCD5 /* DSLThing.m */,
 				74E02D091E66D0C600A2FB4F /* Main.storyboard */,
@@ -413,6 +418,7 @@
 				740B05881E67ED3000A3CCD5 /* DSLThing.m in Sources */,
 				74E02D051E66D0C600A2FB4F /* AppDelegate.m in Sources */,
 				74E02D621E67E03900A2FB4F /* View+MASAdditions.m in Sources */,
+				7469D78C1E6CFC1F00109839 /* LCApopA.m in Sources */,
 				74E02D5A1E67E03900A2FB4F /* MASCompositeConstraint.m in Sources */,
 				74E02D641E67E03900A2FB4F /* README.md in Sources */,
 				74E02D611E67E03900A2FB4F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,

@@ -36,6 +36,15 @@ UINavigationControllerDelegate>
     self.navigationController.delegate = self;
 }
 
+//- (void)viewWillDisappear:(BOOL)animated {
+//    [super viewWillDisappear:animated];
+//    
+//    // Stop being the navigation controller's delegate
+//    if (self.navigationController.delegate == self) {
+//        self.navigationController.delegate = nil;
+//    }
+//}
+
 -(instancetype)init{
     if (self = [super init]) {
         _dataArr = [DSLThing exampleThings];
@@ -83,6 +92,8 @@ UINavigationControllerDelegate>
     
     BViewController *bvc = [BViewController new];
     bvc.image = model.image;
+    bvc.lableStr = model.overview;
+    bvc.cell = (LCCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
     [self.navigationController pushViewController:bvc animated:YES];
 }
 

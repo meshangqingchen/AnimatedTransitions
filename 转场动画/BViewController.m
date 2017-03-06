@@ -11,7 +11,9 @@
 
 #import "BViewController.h"
 #import "Masonry.h"
+#import "LCApopA.h"
 @interface BViewController ()
+<UINavigationControllerDelegate>
 
 @end
 
@@ -26,22 +28,33 @@
     _imageView.frame = CGRectMake(0, 0, (SCREEN_WIDTH-10)/2, (SCREEN_WIDTH-10)/2);
     _imageView.center = self.view.center;
     _imageView.image  = self.image;
+//    [self.navigationController popViewControllerAnimated:YES];
+    self.label = [UILabel new];
+    [self.view addSubview:_label];
+    self.label.text = self.lableStr;
+    self.label.numberOfLines = 0;
+    [_label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_offset(0);
+        make.width.mas_equalTo(self.imageView);
+        make.top.mas_equalTo(self.imageView.mas_bottom).mas_offset(20);
+    }];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    self.navigationController.delegate = self;
+}
+
+-(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     
+    if (operation == UINavigationControllerOperationPop) {
+        return [LCApopA new];
+    }
+    
+    return nil;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)dealloc{
+
+    NSLog(@"=====");
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

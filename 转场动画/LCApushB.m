@@ -13,12 +13,13 @@
 @implementation LCApushB
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
-    return 0.25;
+    return 3;
 
 }
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
     ViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    
     BViewController *toViewController = (BViewController*)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     UIView *containerView = [transitionContext containerView];
@@ -28,6 +29,10 @@
     UIView *cellImageSnapshot = [cell.backImageView snapshotViewAfterScreenUpdates:NO];//cell.backImageView的快照
     cellImageSnapshot.frame = [containerView convertRect:cell.backImageView.frame fromView:cell.contentView];
     cell.backImageView.hidden = YES;
+    
+    
+    
+    
     
     toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
     toViewController.view.alpha = 0;

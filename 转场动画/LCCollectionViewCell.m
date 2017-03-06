@@ -35,6 +35,8 @@
         make.left.right.bottom.mas_offset(0);
         make.height.mas_equalTo(20);
     }];
+    
+    
 };
 
 -(void)bingModel:(id)model{
